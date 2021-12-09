@@ -1,0 +1,21 @@
+{{- if .Values.clusterRole.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+# This cluster role binding allows anyone in the "manager" group to read secrets in any namespace.
+kind: ClusterRoleBinding
+metadata:
+  name: {{ .Values.clusterRole.names.roleBinding }}
+  labels:
+    {{- include "ephemerator.labels" . | nindent 4 }}
+  {{- with .Values.clusterRole.annotations.roleBinding }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+subjects:
+- kind: ServiceAccount
+  name: {{ include "ephemerator.serviceAccountName" . }}
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: {{ .Values.clusterRole.names.role }}
+  apiGroup: rbac.authorization.k8s.io
+{{- end }}
