@@ -12,16 +12,4 @@ entries:
     urls:
     - https://github.com/awaldow/tessellate-helm/releases/download/ephemerate-0.1.1-v1alpha1/ephemerate-0.1.1-v1alpha1.tgz
     version: 0.1.1-v1alpha1
-  ephemerator:
-  - apiVersion: v2
-    appVersion: 0.0.1-v1alpha1
-    created: "2021-12-09T00:51:41.249499706Z"
-    description: A Helm chart for Ephemerator, an operator to grant you the ability
-      to apply lifetimes to your namespaces.
-    digest: b70ae7220a49744048f9da945eaa7e696b82b2e1a5a4ca3974ec35caa2b254f6
-    name: ephemerator
-    type: application
-    urls:
-    - https://github.com/awaldow/tessellate-helm/releases/download/ephemerator-0.1.0/ephemerator-0.1.0.tgz
-    version: 0.1.0
 generated: "2021-12-09T01:51:47.663351076Z"
