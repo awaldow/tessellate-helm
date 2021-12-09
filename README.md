@@ -13,8 +13,8 @@ ephemerate` to see the charts.
 
 To install the ephermate chart:
 
-    helm install my-ephemerate tessellate/ephemerate
+    helm install ephemerate tessellate/ephemerate
 
 To uninstall the chart:
 
-    helm delete my-ephemerate
+    helm delete ephemerate
