@@ -3,6 +3,17 @@ entries:
   ephemerate:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2021-12-12T21:31:37.046860751Z"
+    description: A Helm chart for Ephemerate, an operator to grant you the ability
+      to apply lifetimes to your namespaces.
+    digest: 4e56cb8961ce7222986b517c8bacdfee8958adb2fac4df7204df6eecb2ace3c2
+    name: ephemerate
+    type: application
+    urls:
+    - https://github.com/awaldow/tessellate-helm/releases/download/ephemerate-0.0.2/ephemerate-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2021-12-09T06:21:37.666489742Z"
     description: A Helm chart for Ephemerate, an operator to grant you the ability
       to apply lifetimes to your namespaces.
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/awaldow/tessellate-helm/releases/download/ephemerate-0.0.1/ephemerate-0.0.1.tgz
     version: 0.0.1
-generated: "2021-12-09T06:21:37.666498842Z"
+generated: "2021-12-12T21:31:37.046868751Z"
