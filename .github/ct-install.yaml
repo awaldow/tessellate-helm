@@ -4,3 +4,4 @@ remote: origin
 target-branch: main
 debug: true
 helm-extra-args: --timeout 600s
+namespace: default
