@@ -11,6 +11,5 @@ spec:
   containers:
     - name: wget
       image: busybox
-      command: ['wget', '-w', '15']
-      args: ['{{ include "ephemerator.fullname" . }}:{{ .Values.service.port }}/healthz']
+      command: 'sleep 15s && wget {{ include "ephemerator.fullname" . }}:{{ .Values.service.port }}/healthz'
   restartPolicy: Never
