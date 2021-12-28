@@ -1,8 +1,7 @@
 chart-dirs:
   - charts
-chart-repos:
-  - tesellate=https://awaldow.github.io/tesellate-helm
 remote: origin
 target-branch: main
 debug: true
 helm-extra-args: --timeout 600s
+namespace: default

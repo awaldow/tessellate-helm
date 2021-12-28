@@ -11,9 +11,5 @@ spec:
       targetPort: 8080
       protocol: TCP
       name: http
-    # - port: 443
-    #   targetPort: 8443
-    #   protocol: TCP
-    #   name: admission-webhook
   selector:
     {{- include "ephemerator.selectorLabels" . | nindent 4 }}
